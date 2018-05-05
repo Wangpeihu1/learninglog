@@ -11,4 +11,6 @@ urlpatterns = [
 	re_path('topics/(?P<topic_id>\d+)/',views.topic,name='topic'),
 	#用于添加新主题的网页
 	path('new_topic/',views.new_topic,name='new_topic'),
+	#用于添加新条目的页面
+	path('new_entry/(?P<topic_id>\d+)/',views.new_entry,name='new_entry')
 ]
