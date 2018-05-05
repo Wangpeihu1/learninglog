@@ -8,5 +8,7 @@ urlpatterns = [
 	#显示所有主题
 	path('topics/',views.topics,name='topics'),
 	#显示单个主题
-	re_path('topics/(?P<topic_id>\d+)/',views.topic,name='topic')
+	re_path('topics/(?P<topic_id>\d+)/',views.topic,name='topic'),
+	#用于添加新主题的网页
+	path('new_topic/',views.new_topic,name='new_topic'),
 ]
